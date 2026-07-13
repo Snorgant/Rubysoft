@@ -2,6 +2,8 @@
 
 Moderne one-page bedrijfswebsite voor Rubysoft Window. De site presenteert de 3D/BIM-oplossing, voordelen, werkwijze, expertise en contactinformatie in een snelle, responsive ervaring.
 
+Live website: [snorgant.github.io/Rubysoft](https://snorgant.github.io/Rubysoft/)
+
 ## Techniek
 
 - Semantische HTML5
@@ -58,6 +60,10 @@ npm run preview
 ### Statische hosting
 
 Voer `npm run build` uit en publiceer de volledige inhoud van `dist/` via een statische webserver.
+
+### GitHub Pages
+
+Iedere push naar `main` wordt automatisch gevalideerd, gebouwd en gepubliceerd via `.github/workflows/pages.yml`. Stel bij **Settings → Pages → Build and deployment** de bron in op **GitHub Actions**.
 
 ## Projectstructuur
 

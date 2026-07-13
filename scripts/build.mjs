@@ -12,8 +12,8 @@ await cp(resolve(root, 'src/styles.css'), resolve(dist, 'styles.css'));
 await cp(resolve(root, 'src/main.js'), resolve(dist, 'main.js'));
 
 const html = (await readFile(resolve(root, 'index.html'), 'utf8'))
-  .replace('/src/styles.css', '/styles.css')
-  .replace('/src/main.js', '/main.js');
+  .replace('./src/styles.css', './styles.css')
+  .replace('./src/main.js', './main.js');
 await writeFile(resolve(dist, 'index.html'), html);
 
 console.log('Production build created in dist/');
